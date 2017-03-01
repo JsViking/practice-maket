@@ -1,0 +1,179 @@
+input {
+    -webkit-border-radius:0; 
+    border-radius:0;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+input,
+textarea {
+    outline:none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "basic_sans_serif_7";
+    src: url("../fonts/basic_sans_serif_7.ttf");
+}
+
+/*font-family: 'Roboto', sans-serif;*/
+
+.middle-block {
+	position: relative;
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.header-contacts {
+	position: relative;
+	background: #282828;
+	height: 40px;
+
+	.contacts-wrapper {
+		position: relative;
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: space-between;
+	    flex-wrap: wrap;
+		padding-top: 13px;
+
+	    .social {
+	    	position: relative;
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: space-between;
+		    flex-wrap: wrap;
+
+		    .social-item {
+		    	position: relative;
+		    	width: 15px;
+		    	height: 15px;
+		    	cursor: pointer;
+		    	
+		    }
+
+		    .ico-1 {
+		    	background: url(../images/social.png) no-repeat 0 0;
+		    }
+
+		    .ico-2 {
+		    	background: url(../images/social.png) no-repeat -16px 0;
+		    }
+
+		    .ico-3 {
+		    	background: url(../images/social.png) no-repeat -35px 0;
+		    }
+
+		    .ico-4 {
+		    	background: url(../images/social.png) no-repeat -52px 0;
+		    }
+	    }
+
+	    .requisites {
+	    	position: relative;
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: space-between;
+		    flex-wrap: wrap;
+
+		    .phone {
+		    	position: relative;
+			    display: flex;
+			    flex-direction: row;
+			    justify-content: space-between;
+			    flex-wrap: wrap;
+
+			    .phone-ico {
+			    	position: relative;
+			    	background: url(../images/phone.png) no-repeat 0 0;
+			    	width: 11px;
+			    	height: 12px;
+			        margin-top: 1px;
+			    }
+		    }
+
+		    .mail {
+		    	position: relative;
+			    display: flex;
+			    flex-direction: row;
+			    justify-content: space-between;
+			    flex-wrap: wrap;
+
+			    .mail-ico {
+			    	position: relative;
+			    	background: url(../images/mail.png) no-repeat 0 0;
+			    	width: 14px;
+			    	height: 12px;
+			   	    margin-left: 15px;
+			   	    margin-top: 2px;
+			    }			    		    	
+		    }
+
+		    .text {
+		    	position: relative;
+		    	font-family: 'Roboto', sans-serif;
+		    	font-size: 13px;
+		    	color: white;
+		        padding-left: 5px;
+		    } 	
+	    }
+	}
+}
+
+.header-menu {
+	position: relative;
+	height: 80px;
+	background: #ffffff;
+
+	.menu-wrapper {
+		position: relative;
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: space-between;
+	    flex-wrap: wrap;
+	    padding-top: 25px;
+
+	    .logo {
+	    	position: relative;
+	    	font-family: "basic_sans_serif_7";
+	    	font-size: 30px;
+	    	color: #636666;
+	    }
+
+	    .menu {
+	    	position: relative;
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: space-between;
+		    flex-wrap: wrap;
+
+		    .menu-item {
+		    	position: relative;
+		    	font-size: 14px;
+		    	font-family: 'Roboto', sans-serif;
+		    	margin: 0 10px;
+		    	cursor: pointer;
+		    	line-height: 37px;
+		    }
+
+		    .button-sign {
+		    	position: relative;
+		    	font-size: 12px;
+		    	font-family: 'Roboto', sans-serif;
+		    	border: 1px #5db442 solid;
+				padding: 10px 30px;
+		        border-radius: 20px;
+		        text-align: center;
+		        color: #5db442;
+		        margin-left: 15px;
+		        cursor: pointer;
+		    }
+	    }
+	}
+}
