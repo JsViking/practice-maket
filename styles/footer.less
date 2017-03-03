@@ -8,5 +8,161 @@
 	    flex-direction: row;
 	    justify-content: space-between;
 	    flex-wrap: wrap;
+	    padding-top: 65px;
+	    padding-bottom: 50px;
+
+	    @media screen and (max-width: 580px) {
+			display: block;
+			padding-top: 35px;
+			padding-bottom: 30px;
+	    }
+
+	    .title {
+	    	position: relative;
+			font-family: 'Roboto', sans-serif;
+	   		font-size: 16px;
+	   		padding-bottom: 40px;
+
+		    @media screen and (max-width: 580px) {
+				padding-bottom: 20px;
+		    }
+	    }
+
+	    li {
+	    	position: relative;
+	    	display: block;
+			font-family: 'RobotoLight', sans-serif;
+	   		font-size: 13px;
+	   		color: #656565;
+	   		line-height: 25px;
+	   		cursor: pointer;
+
+		    @media screen and (max-width: 970px) {
+		        font-size: 10px;           
+		    }
+	    }
+
+	    .newsletter {
+	    	position: relative;
+	    	width: 25%;
+
+		    @media screen and (max-width: 580px) {
+				width: inherit;
+				margin-bottom: 30px;
+		    }
+
+	    	.some-text-min {
+	    		position: relative;
+				font-family: 'RobotoLight', sans-serif;
+		   		font-size: 13px;
+		   		color: #656565;
+		   		padding-bottom: 20px;
+
+			    @media screen and (max-width: 810px) {
+			        font-size: 11px;           
+			    }
+	    	}
+
+	    	input {
+	    		position: relative;
+	    		display: inline-block;
+	    		height: 41px;
+	    		width: 75%;
+	    	}
+
+			input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease; padding-left: 5px;}
+			input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; padding-left: 5px;}
+			input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; padding-left: 5px;}
+			input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; padding-left: 5px;}
+			input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease; padding-left: 5px;}
+			input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease; padding-left: 5px;}
+			input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease; padding-left: 5px;}
+			input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease; padding-left: 5px;}
+
+	    	.button-subscribe {
+	    		position: relative;
+	    		display: inline-block;
+	    		height: 45px;
+	    		background: #5db442;
+	    		color: white;
+	    		line-height: 45px;
+	    		text-align: center;
+	    		vertical-align: top;
+	    		cursor: pointer;
+	    		width: 20%;
+	    	}
+
+	    	.button-subscribe:hover {
+	    		opacity: 0.5;
+	    	}
+	    }
+
+	    .quiklinks {
+	    	position: relative;
+	    	width: 15%;
+
+		    @media screen and (max-width: 1370px) {
+		        width: 20%;        
+		    }
+
+		    @media screen and (max-width: 580px) {
+				width: inherit;
+				display: inline-block;
+				padding-left: 20px;
+		    }
+	    }
+
+	    .legal {
+	    	position: relative;
+	    	width: 15%;
+
+		    @media screen and (max-width: 1370px) {
+		        width: 20%;           
+		    }
+
+		    @media screen and (max-width: 580px) {
+				display: none;
+		    }
+	    }
+
+	    .information {
+	    	position: relative;
+	    	width: 15%;
+
+		    @media screen and (max-width: 1370px) {
+		        width: 20%;           
+		    }
+
+		    @media screen and (max-width: 580px) {
+				width: inherit;
+				display: inline-block;
+				vertical-align: top;
+				float: right;
+				padding-right: 20px;
+		    }
+	    }
+
+	    .footer-logo  {
+	    	position: relative;
+	    	font-family: "basic_sans_serif_7";
+	    	font-size: 20px;
+	    	color: #636666;
+
+		    @media screen and (max-width: 1370px) {
+		    	text-align: center;        
+		    }  	
+	    }
+
+	    .rights-reserved {
+	    	position: relative;
+			font-family: 'RobotoLight', sans-serif;
+	   		font-size: 11px;
+	   		color: #656565;
+
+		    @media screen and (max-width: 1370px) {
+		    	text-align: center;
+		    	padding: 10px 0;          
+		    }  	
+	    }
 	}
 }

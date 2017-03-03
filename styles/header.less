@@ -26,14 +26,46 @@ a {
 
 .middle-block {
 	position: relative;
-	width: 1170px;
+	width: 70%;
 	margin: 0 auto;
+
+    @media screen and (max-width: 810px) {
+        width: 95%;           
+    }
+
+    @media screen and (max-width: 580px) {
+        width: 98%;           
+    }
+}
+
+.title-block {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-size: 48px;
+	text-align: center;
+	padding-top: 100px;
+
+    @media screen and (max-width: 970px) {
+        font-size: 30px;           
+    }
+
+    @media screen and (max-width: 640px) {
+        font-size: 25px;           
+    }
+
+    @media screen and (max-width: 580px) {
+       padding-top: 50px;
+    }
 }
 
 .header-contacts {
 	position: relative;
 	background: #282828;
 	height: 40px;
+
+    @media screen and (max-width: 580px) {
+       height: inherit;           
+    }
 
 	.contacts-wrapper {
 		position: relative;
@@ -81,6 +113,10 @@ a {
 		    flex-direction: row;
 		    justify-content: space-between;
 		    flex-wrap: wrap;
+
+		    @media screen and (max-width: 580px) {
+		        padding: 10px 0;           
+		    }
 
 		    .phone {
 		    	position: relative;
@@ -131,6 +167,10 @@ a {
 	height: 80px;
 	background: #ffffff;
 
+    @media screen and (max-width: 580px) {
+       height: inherit;           
+    }
+
 	.menu-wrapper {
 		position: relative;
 	    display: flex;
@@ -138,6 +178,11 @@ a {
 	    justify-content: space-between;
 	    flex-wrap: wrap;
 	    padding-top: 25px;
+
+	    @media screen and (max-width: 580px) {
+	       padding: 20px 0;
+	       justify-content: center;          
+	    }
 
 	    .logo {
 	    	position: relative;
@@ -153,6 +198,11 @@ a {
 		    justify-content: space-between;
 		    flex-wrap: wrap;
 
+		    @media screen and (max-width: 580px) {
+		       padding: 10px 0;
+		       justify-content: space-around;          
+		    }
+
 		    .menu-item {
 		    	position: relative;
 		    	font-size: 14px;
@@ -160,6 +210,10 @@ a {
 		    	margin: 0 10px;
 		    	cursor: pointer;
 		    	line-height: 37px;
+
+			    @media screen and (max-width: 580px) {
+			       margin-bottom: 10px;
+			    }
 		    }
 
 		    .menu-item:hover {
@@ -177,6 +231,11 @@ a {
 		        color: #5db442;
 		        margin-left: 15px;
 		        cursor: pointer;
+
+			    @media screen and (max-width: 580px) {
+			       margin-top: 10px;
+			       margin: inherit;
+			    }
 		    }
 
 		    .button-sign:hover {
@@ -184,14 +243,6 @@ a {
 		    }
 	    }
 	}
-}
-
-.title-block {
-	position: relative;
-	font-family: 'Roboto', sans-serif;
-	font-size: 48px;
-	text-align: center;
-	padding-top: 100px;
 }
 
 .header-note-book {
@@ -206,6 +257,14 @@ a {
 		padding: 15px 0;
 	    width: 70%;
     	margin: 0 auto;
+
+	    @media screen and (max-width: 640px) {
+	        font-size: 12px;           
+	    }
+
+	    @media screen and (max-width: 580px) {
+	        width: 80%;           
+	    }
 	}
 
 	.book {
@@ -215,6 +274,21 @@ a {
 		width: 685px;
 		height: 402px;
 		margin: 0 auto;
+
+	    @media screen and (max-width: 970px) {
+	        width: 570px;
+	        height: 335px;        
+	    }
+
+	    @media screen and (max-width: 640px) {
+	        width: 500px;
+	        height: 294px;        
+	    }
+
+	    @media screen and (max-width: 580px) {
+	        width: 270px;
+	        height: 159px;        
+	    }
 	}
 
 	.agree {
@@ -231,6 +305,10 @@ a {
 	position: relative;
 	text-align: center;
 	padding-top: 80px;
+
+    @media screen and (max-width: 580px) {
+    	padding-top: 40px;
+    }
 
 	input {
 		display: inline-block;

@@ -5,7 +5,8 @@
 
 	.signup-box {
 		position: relative;
-		width: 60%;
+		max-width: 700px;
+		width: 70%;
 		height: 300px;
 		border: 2px #d6d6d6 solid;
 		margin: 0 auto;
@@ -15,6 +16,10 @@
 		-moz-box-shadow: 0px 0px 5px 2px rgba(219,219,219,1);
 		box-shadow: 0px 0px 5px 2px rgba(219,219,219,1);
 
+	    @media screen and (max-width: 580px) {
+	        width: 85%;           
+	    }
+
 		.sign-ico {
 			position: relative;
 			display: inline-block;
@@ -23,6 +28,12 @@
 			width: 69px;
 			height: 58px;
 			cursor: pointer;
+
+		    @media screen and (max-width: 580px) {
+		        display: block;
+		        margin: 0 auto;
+		        margin-top: 15px;          
+		    }
 		}
 
 		.sign-ico:hover {
@@ -35,12 +46,22 @@
 			padding-left: 50px;
 			padding-top: 60px;
 
+		    @media screen and (max-width: 580px) {
+		        width: 85%;
+		        padding-left: inherit;
+		        padding-top: 40px;       
+		    }
+
 			.arrow-up {
 				position: relative;
 				background: url(../images/arrow.png) no-repeat 0 0;
 				width: 28px;
 				height: 15px;
 				cursor: pointer;
+
+			    @media screen and (max-width: 580px) {
+			        margin: 0 auto;       
+			    }
 			}
 
 			.arrow-down {
@@ -51,6 +72,11 @@
 				cursor: pointer;
 				padding: 15px 0;
 				margin-top: 5px;
+
+			    @media screen and (max-width: 580px) {
+			        margin: 0 auto;
+			        margin-top: 10px;     
+			    }
 			}
 
 			.arrow-down:hover {
@@ -87,6 +113,19 @@
     	margin: 0 auto;
     	padding-top: 40px;
     	padding-bottom: 80px;
+
+	    @media screen and (max-width: 580px) {
+			width: inherit;
+			padding-bottom: 20px;
+	    }
+
+	    .community-menu-item {
+
+		    @media screen and (max-width: 580px) {
+				width: 50%;
+				margin: 15px 0;
+		    }
+	    }
 
 	   	.edition-ico {
 	   		position: relative;
@@ -213,9 +252,24 @@
     flex-wrap: wrap;
     margin-bottom: 100px;
 
+    @media screen and (max-width: 580px) {
+		display: block;
+    }
+
+    .showcase-box {
+    	position: relative;
+    	max-width: 270px;
+    	width: 30%;
+
+	    @media screen and (max-width: 580px) {
+			max-width: 100%;
+			width: 100%;
+			margin: 10px 0;
+	    }
+    }
+
 	.top-box {
 		position: relative;
-		width: 270px;
 		height: 115px;
 		border: 1px #ececec solid;
 
@@ -231,7 +285,6 @@
 
 	.bottom-box {
 		position: relative;
-		width: 270px;
 		height: 290px;
 		border: 1px #ececec solid;
 		text-align: center;
@@ -342,6 +395,10 @@
     margin-top: 50px;
     padding-bottom: 50px;
 
+    @media screen and (max-width: 580px) {
+		display: block;
+    }
+
     .community-edition-box {
     	position: relative;
     	width: 24%;
@@ -352,6 +409,10 @@
 		background: white;
 		margin: 10px 0;
 		cursor: pointer;
+
+	    @media screen and (max-width: 580px) {
+			width: inherit;
+	    }
 
 		.top-line {
 			position: relative;
@@ -368,6 +429,10 @@
 			font-family: 'Roboto', sans-serif;
 	   		font-size: 16px;
 	   		font-weight: bold;
+
+		    @media screen and (max-width: 970px) {
+		        font-size: 13px;           
+		    }
 		}
 
 		.some-text {
@@ -380,6 +445,14 @@
 		    line-height: 20px;
 		    width: 80%;
 		    margin: 18px auto;
+
+		    @media screen and (max-width: 1350px) {
+		        line-height: 15px;           
+		    }
+
+		    @media screen and (max-width: 970px) {
+		        font-size: 10px;           
+		    }
 		}
     }
 
@@ -406,7 +479,8 @@
     .ico {
     	color: #5db442;
     	text-align: center;
-        margin-left: 106px;
         margin-top: 40px;
+	    display: inline-block;
+	    width: 100%;
     }
 }
